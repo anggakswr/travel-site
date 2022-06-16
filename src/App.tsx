@@ -5,6 +5,7 @@ import PerfectBeaches from "./components/PerfectBeaches";
 import ExploreOurSecrets from "./components/ExploreOurSecrets";
 import OurHills from "./components/OurHills";
 import LiveALife from "./components/LiveALife";
+import PhotoGallery from "./components/PhotoGallery";
 
 const App = () => {
   return (
@@ -24,8 +25,11 @@ const App = () => {
       {/* white section */}
       <OurHills />
 
-      {/* dark becak section */}
+      {/* dark blue section (becak img) */}
       <LiveALife />
+
+      {/* white section */}
+      <PhotoGallery />
     </>
   );
 };
