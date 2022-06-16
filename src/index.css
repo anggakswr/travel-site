@@ -28,5 +28,5 @@
 }
 
 .pink-btn {
-  @apply inline-block bg-pink-brand hover:text-pink-brand hover:bg-white transition duration-150 rounded-full text-dm-sans text-[20px] font-bold;
+  @apply inline-block text-white bg-pink-brand hover:text-pink-brand hover:bg-white transition duration-150 rounded-full text-dm-sans text-[20px] font-bold;
 }
