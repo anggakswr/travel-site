@@ -16,7 +16,7 @@ const BlackBoxes = () => {
       {/* black boxes */}
       <div className="flex items-end w-full">
         {/* big black box */}
-        <div className="w-full text-white pl-[71.04px] pr-[128.07px] pt-[41px] pb-[49px] flex justify-between relative">
+        <div className="w-full text-white px-[71.04px] pt-[41px] pb-[49px] grid grid-cols-3 relative">
           <Text num="01" />
           <Text num="02" />
           <Text num="03" />

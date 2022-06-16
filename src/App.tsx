@@ -4,6 +4,7 @@ import TheWalkways from "./components/TheWalkways";
 import PerfectBeaches from "./components/PerfectBeaches";
 import ExploreOurSecrets from "./components/ExploreOurSecrets";
 import OurHills from "./components/OurHills";
+import LiveALife from "./components/LiveALife";
 
 const App = () => {
   return (
@@ -22,6 +23,9 @@ const App = () => {
 
       {/* white section */}
       <OurHills />
+
+      {/* dark becak section */}
+      <LiveALife />
     </>
   );
 };
