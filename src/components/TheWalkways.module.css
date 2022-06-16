@@ -1,0 +1,18 @@
+.blueGradient {
+  background: linear-gradient(360deg, #010a20 0%, rgba(1, 10, 32, 0) 100%);
+
+  /* background: linear-gradient(
+    360deg,
+    #010a20 20%,
+    #010a20 50%,
+    rgba(1, 10, 32, 0) 100%
+  ); */
+
+  /* background: linear-gradient(180deg, rgba(1, 10, 32, 0) 100%, #010a20 0%); */
+
+  /* background-color: #010a20; */
+}
+
+.letterSpacing {
+  letter-spacing: 1%;
+}

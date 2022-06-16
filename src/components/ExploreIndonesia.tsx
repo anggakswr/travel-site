@@ -1,18 +1,19 @@
-import React from "react";
 import BigText from "./explore-indonesia/BigText";
+import BlackBoxes from "./explore-indonesia/BlackBoxes";
 
 const ExploreIndonesia = () => {
   return (
     <section
       className="pt-[233px] h-[1080px] bg-center bg-cover relative"
-      style={{ backgroundImage: "url(/img/explore-indonesia.jpg)" }}
+      style={{ backgroundImage: "url(/img/big-text/explore-indonesia.jpg)" }}
     >
       {/* content */}
-      <div className="relative z-10">
+      <div className="h-full relative z-10 flex flex-col justify-between">
         {/* scroll bar & big text */}
         <BigText />
 
         {/* black boxes */}
+        <BlackBoxes />
       </div>
 
       {/* black transparent bg */}

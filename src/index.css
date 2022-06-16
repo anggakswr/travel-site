@@ -4,20 +4,11 @@
 
 * {
   font-size: 16px;
+  font-family: "DM Sans", sans-serif;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.box-center {
+  @apply flex items-center justify-center;
 }
 
 .box-between {
@@ -34,4 +25,8 @@ code {
 
 .text-roboto {
   font-family: "Roboto", sans-serif;
+}
+
+.pink-btn {
+  @apply inline-block bg-pink-brand hover:text-pink-brand hover:bg-white transition duration-150 rounded-full text-dm-sans text-[20px] font-bold;
 }

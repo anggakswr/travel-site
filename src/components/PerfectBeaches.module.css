@@ -1,0 +1,7 @@
+.blueGradient {
+  background: linear-gradient(180deg, #010a20 0%, rgba(1, 10, 32, 0) 100%);
+}
+
+.letterSpacing {
+  letter-spacing: 1%;
+}
