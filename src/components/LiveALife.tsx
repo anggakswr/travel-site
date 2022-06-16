@@ -29,7 +29,7 @@ const LifeALife = () => {
       </div>
 
       {/* 2 small items */}
-      <div className="relative z-10 grid grid-cols-2 w-3/4 mx-auto">
+      <div className="relative z-10 grid grid-cols-2 gap-x-[75px] w-3/4 mx-auto">
         <SmallItem
           obj={{
             title: "In The Country",

@@ -22,7 +22,7 @@ const SmallItem = ({ obj }: SmallItemType) => {
       {/* texts */}
       <div className="text-white">
         {/* title */}
-        <p className="text-[18px] font-bold mb-[15.09px]">{title}</p>
+        <h3 className="text-[18px] font-bold mb-[15.09px]">{title}</h3>
 
         {/* desc */}
         <p className="text-[18px] opacity-70">{desc}</p>

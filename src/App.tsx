@@ -6,6 +6,9 @@ import ExploreOurSecrets from "./components/ExploreOurSecrets";
 import OurHills from "./components/OurHills";
 import LiveALife from "./components/LiveALife";
 import PhotoGallery from "./components/PhotoGallery";
+import GettingThere from "./components/GettingThere";
+import BackToTop from "./components/BackToTop";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -30,6 +33,14 @@ const App = () => {
 
       {/* white section */}
       <PhotoGallery />
+
+      {/* light blue section */}
+      <GettingThere />
+
+      {/* sticky btn in bottom-left */}
+      <BackToTop />
+
+      <Footer />
     </>
   );
 };
