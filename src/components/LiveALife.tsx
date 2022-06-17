@@ -3,24 +3,24 @@ import SmallItem from "./live-a-life/SmallItem";
 const LifeALife = () => {
   return (
     <section
-      className="pt-[141.6px] pb-[255px] bg-center bg-cover relative"
+      className="pt-[83px] md:pt-[141.6px] pb-[32px] md:pb-[255px] px-[30px] md:px-0 bg-center bg-cover relative"
       style={{ backgroundImage: "url(/img/live-a-life/palm-trees.jpg)" }}
     >
       {/* content */}
-      <div className="relative z-10 w-[1056px] mx-auto text-center">
+      <div className="relative z-10 md:w-[1056px] mx-auto text-center">
         {/* title */}
-        <h2 className="text-white text-[42px] font-bold leading-[50px] mb-[67.2px]">
+        <h2 className="text-white text-[40px] md:text-[42px] font-bold leading-[46px] md:leading-[50px] mb-[67.2px]">
           Live a life like you wouldn’t imagine, experience a life you wouldn’t
           expect.
         </h2>
 
         {/* big img */}
         <div
-          className="w-[1056px] h-[594px] rounded-[10px] box-center bg-center bg-cover mb-[125px]"
+          className="md:w-[1056px] h-[192px] md:h-[594px] rounded-[10px] box-center bg-center bg-cover mb-[40px] md:mb-[125px]"
           style={{ backgroundImage: "url(/img/live-a-life/becak.png)" }}
         >
           <button
-            className="w-[96px] h-[96px] rounded-full box-center"
+            className="w-[67px] md:w-[96px] h-[67px] md:h-[96px] rounded-full box-center"
             style={{ backgroundColor: "#E93A7D" }}
           >
             <img src="/icon/white-play.svg" alt="White Play" />
@@ -29,7 +29,7 @@ const LifeALife = () => {
       </div>
 
       {/* 2 small items */}
-      <div className="relative z-10 grid grid-cols-2 gap-x-[75px] w-3/4 mx-auto">
+      <div className="relative z-10 grid md:grid-cols-2 gap-x-[75px] md:w-3/4 mx-auto">
         <SmallItem
           obj={{
             title: "In The Country",
