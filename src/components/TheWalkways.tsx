@@ -3,13 +3,13 @@ import styles from "./TheWalkways.module.css";
 const TheWalkways = () => {
   return (
     <section
-      className="pt-[207px] pb-[97px] flex justify-center bg-cover bg-center relative"
+      className="pt-[40px] md:pt-[207px] md:pb-[97px] flex justify-center bg-cover bg-center relative"
       style={{ backgroundImage: "url(/img/walkways/mountain.jpg)" }}
     >
       {/* content */}
-      <div className="z-10 flex items-center">
+      <div className="z-10 flex flex-col md:flex-row items-center mx-[30px] md:mx-0">
         {/* img */}
-        <div className="mr-[130.86px]">
+        <div className="md:mr-[130.86px] mb-[33.79px] md:mb-0">
           <img
             src="/img/walkways/mountain-path.png"
             alt="Mountain Path"
@@ -18,19 +18,19 @@ const TheWalkways = () => {
         </div>
 
         {/* texts */}
-        <div className="text-white w-[479.5px]">
-          <h2 className="font-bold text-[42px] leading-[50px]">
+        <div className="text-white md:w-[479.5px]">
+          <h2 className="font-bold text-[40px] md:text-[42px] leading-[46px] md:leading-[50px]">
             The walkways of Indonesia spellbind
           </h2>
 
-          <p className={`${styles.letterSpacing} text-[18px] my-[32.13px]`}>
+          <p className="text-[16px] md:text-[18px] my-[32.13px]">
             Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce
             commodo magna et libero mollis rhoncus.
           </p>
 
           <a
             href="#learn-walkways"
-            className="pink-btn text-[18px] py-4 px-[40.91px]"
+            className="pink-btn text-[18px] py-[22.5px] md:py-4 px-[108px] md:px-[40.91px]"
           >
             Learn More
           </a>
