@@ -1,5 +1,6 @@
 import ByTheNumbers from "./explore-our-secrets/ByTheNumbers";
 import Slider from "./explore-our-secrets/Slider";
+import SliderMobile from "./explore-our-secrets/SliderMobile";
 
 const ExploreOurSecrets = () => {
   return (
@@ -16,6 +17,7 @@ const ExploreOurSecrets = () => {
         </h2>
 
         <Slider />
+        <SliderMobile />
       </div>
 
       {/* dark blue section */}

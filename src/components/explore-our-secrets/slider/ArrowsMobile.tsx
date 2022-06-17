@@ -1,11 +1,11 @@
-const Arrows = () => {
+const ArrowsMobile = () => {
   return (
     <div className="splide__arrows">
       <button
         className="splide__arrow splide__arrow--prev"
         style={{
           background: "none",
-          left: "-79.32px",
+          left: "-34px",
         }}
       >
         <img
@@ -19,7 +19,7 @@ const Arrows = () => {
         className="splide__arrow splide__arrow--next"
         style={{
           background: "none",
-          right: "-79.32px",
+          right: "-34px",
         }}
       >
         <img
@@ -32,4 +32,4 @@ const Arrows = () => {
   );
 };
 
-export default Arrows;
+export default ArrowsMobile;

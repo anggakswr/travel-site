@@ -1,20 +1,20 @@
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import Arrows from "./slider/Arrows";
+import ArrowsMobile from "./slider/ArrowsMobile";
 
 const slides = [1, 2, 3, 1, 2, 3];
 
-const Slider = () => {
+const SliderMobile = () => {
   return (
-    <div className="hidden md:block w-3/4 mx-auto">
+    <div className="md:hidden w-full px-[30px]">
       <Splide
         hasTrack={false}
         aria-label="My Favorite Images"
         options={{
           // type: "loop",
-          perPage: 3,
+          perPage: 1,
           perMove: 1,
-          gap: "31px",
+          // gap: "31px",
         }}
       >
         <SplideTrack>
@@ -23,13 +23,15 @@ const Slider = () => {
               <img
                 src={`/img/explore-our-secrets/slide-${slide}.png`}
                 alt={"Slide 1" + slide}
+                className="w-auto"
               />
             </SplideSlide>
           ))}
         </SplideTrack>
 
         {/* slider arrows */}
-        <Arrows />
+        {/* <Arrows /> */}
+        <ArrowsMobile />
 
         {/* slider pagination */}
         <ul className="splide__pagination" style={{ bottom: "-47px" }} />
@@ -38,4 +40,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default SliderMobile;
