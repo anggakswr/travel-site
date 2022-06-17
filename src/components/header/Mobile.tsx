@@ -1,5 +1,5 @@
 type MobilePropType = {
-  headerOpacity: String;
+  headerOpacity: string;
 };
 
 const Mobile = ({ headerOpacity }: MobilePropType) => {

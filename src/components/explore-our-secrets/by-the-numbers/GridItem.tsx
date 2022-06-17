@@ -1,6 +1,6 @@
 type GridItemPropType = {
-  title: String;
-  desc: String;
+  title: string;
+  desc: string;
 };
 
 const GridItem = ({ title, desc }: GridItemPropType) => {

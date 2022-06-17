@@ -1,6 +1,6 @@
 const ImgGridMobile = () => {
   return (
-    <div className="grid grid-cols-2 gap-x-[13px]">
+    <div className="grid md:hidden grid-cols-2 gap-x-[13px]">
       {/* column 1 */}
       <div>
         <img

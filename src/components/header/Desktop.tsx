@@ -1,5 +1,5 @@
 type DesktopPropType = {
-  headerOpacity: String;
+  headerOpacity: string;
 };
 
 const Desktop = ({ headerOpacity }: DesktopPropType) => {

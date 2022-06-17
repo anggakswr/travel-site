@@ -1,5 +1,5 @@
 type TextPropType = {
-  num: String;
+  num: string;
 };
 
 const Text = ({ num }: TextPropType) => {

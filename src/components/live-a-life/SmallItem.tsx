@@ -1,8 +1,8 @@
 type SmallItemType = {
   obj: {
-    title: String;
-    desc: String;
-    img: String;
+    title: string;
+    desc: string;
+    img: string;
   };
 };
 
