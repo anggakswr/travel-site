@@ -3,6 +3,7 @@ import styles from "./TheWalkways.module.css";
 const TheWalkways = () => {
   return (
     <section
+      id="destinations"
       className="pt-[40px] md:pt-[207px] md:pb-[97px] flex justify-center bg-cover bg-center relative"
       style={{ backgroundImage: "url(/img/walkways/mountain.jpg)" }}
     >

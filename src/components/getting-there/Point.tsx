@@ -30,7 +30,7 @@ const Point = ({ number, title, desc, items, link }: PointPropType) => {
       </div>
 
       {/* mobile only */}
-      {items && <Mobile desc={desc} items={items} />}
+      <Mobile desc={desc} items={items} />
 
       <div className="hidden md:block ml-[102.71px] pb-[79.23px]">
         <p className="text-[23.47px] text-[#15143966]">{desc}</p>

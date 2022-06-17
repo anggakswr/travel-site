@@ -5,6 +5,7 @@ import SliderMobile from "./explore-our-secrets/SliderMobile";
 const ExploreOurSecrets = () => {
   return (
     <section
+      id="experiences"
       className="bg-cover bg-center"
       style={{
         backgroundImage: "url(/img/explore-our-secrets/big-rice-field.jpg)",

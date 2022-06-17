@@ -3,6 +3,7 @@ import Point from "./getting-there/Point";
 const GettingThere = () => {
   return (
     <section
+      id="start-travelling"
       className="pt-[29px] md:pt-[119px] pb-[73px] md:pb-[117px] text-center md:text-left"
       style={{ backgroundColor: "#DCE8F2" }}
     >

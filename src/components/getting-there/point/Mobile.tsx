@@ -2,7 +2,7 @@ import { ItemType } from "../Point";
 
 type MobilePropType = {
   desc: string;
-  items: ItemType[];
+  items?: ItemType[];
 };
 
 const Mobile = ({ desc, items }: MobilePropType) => {

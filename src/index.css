@@ -5,6 +5,7 @@
 * {
   font-size: 16px;
   font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .box-center {

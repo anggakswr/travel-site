@@ -3,7 +3,10 @@ import ImgGridMobile from "./photo-gallery/ImgGridMobile";
 
 const PhotoGallery = () => {
   return (
-    <section className="pt-[32px] md:pt-[177px] pb-[40px] md:pb-[229px] px-[30px] md:px-0 text-center">
+    <section
+      id="gallery"
+      className="pt-[32px] md:pt-[177px] pb-[40px] md:pb-[229px] px-[30px] md:px-0 text-center"
+    >
       <h2 className="font-bold text-[40px] md:text-[60px] leading-[46px] md:leading-[90px] text-black-brand mb-[20px] md:mb-[41.83px]">
         Photo Gallery
       </h2>

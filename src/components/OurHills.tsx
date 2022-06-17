@@ -1,6 +1,9 @@
 const OurHills = () => {
   return (
-    <section className="pt-[171px] md:pt-[249px] pb-[116px] md:pb-[256px] px-[30px] md:px-0 text-center relative">
+    <section
+      id="about"
+      className="pt-[171px] md:pt-[249px] pb-[116px] md:pb-[256px] px-[30px] md:px-0 text-center relative"
+    >
       <h2 className="relative z-10 font-bold text-[42px] mb-[36px] md:mb-[32px] md:w-[614px] mx-auto">
         Our hills and valleys are like nothing you’ve seen.
       </h2>
