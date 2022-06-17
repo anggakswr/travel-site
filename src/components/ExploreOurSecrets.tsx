@@ -1,4 +1,5 @@
 import ByTheNumbers from "./explore-our-secrets/ByTheNumbers";
+import Slider from "./explore-our-secrets/Slider";
 
 const ExploreOurSecrets = () => {
   return (
@@ -14,7 +15,7 @@ const ExploreOurSecrets = () => {
           Explore Our Secrets
         </h2>
 
-        <div>slider here</div>
+        <Slider />
       </div>
 
       {/* dark blue section */}
