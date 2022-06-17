@@ -28,7 +28,10 @@ const TheWalkways = () => {
             commodo magna et libero mollis rhoncus.
           </p>
 
-          <a href="#learn-walkways" className="pink-btn py-4 px-[40.91px]">
+          <a
+            href="#learn-walkways"
+            className="pink-btn text-[18px] py-4 px-[40.91px]"
+          >
             Learn More
           </a>
         </div>

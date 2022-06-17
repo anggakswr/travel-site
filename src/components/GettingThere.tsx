@@ -67,7 +67,7 @@ const GettingThere = () => {
 
             <a
               href="#learn-planning"
-              className="pink-btn py-[18.5px] px-[56px]"
+              className="pink-btn text-[18px] py-[18.5px] px-[56px]"
             >
               Learn More
             </a>

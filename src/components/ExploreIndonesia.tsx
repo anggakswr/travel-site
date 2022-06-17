@@ -4,7 +4,7 @@ import BlackBoxes from "./explore-indonesia/BlackBoxes";
 const ExploreIndonesia = () => {
   return (
     <section
-      className="pt-[233px] h-[1080px] bg-center bg-cover relative"
+      className="pt-[153px] md:pt-[233px] bg-center bg-cover relative"
       style={{ backgroundImage: "url(/img/big-text/explore-indonesia.jpg)" }}
     >
       {/* content */}

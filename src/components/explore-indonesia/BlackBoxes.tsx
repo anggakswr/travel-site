@@ -5,7 +5,7 @@ const BlackBoxes = () => {
   return (
     <section className="box-equal">
       {/* vertical texts */}
-      <div className="w-[277.14px]">
+      <div className="hidden md:block w-[277.14px]">
         <div className="flex justify-between font-bold text-white -rotate-90 w-[131px]">
           <span>Fb</span>
           <span>In</span>
@@ -14,9 +14,11 @@ const BlackBoxes = () => {
       </div>
 
       {/* black boxes */}
-      <div className="flex items-end w-full">
+      {/* <div className="flex items-end w-full"> */}
+      <div className="grid md:grid-cols-4 items-end w-full mb-[40px] md:mb-0">
         {/* big black box */}
-        <div className="w-full text-white px-[71.04px] pt-[41px] pb-[49px] grid grid-cols-3 relative">
+        {/* <div className="w-full text-white px-[71.04px] pt-[41px] pb-[49px] grid grid-cols-3 relative"> */}
+        <div className="mx-[30px] md:mx-0 md:col-span-3 text-white px-[32px] md:px-[71.04px] pt-[35px] md:pt-[41px] pb-[31px] md:pb-[49px] grid md:grid-cols-3 gap-y-[32px] relative">
           <Text num="01" />
           <Text num="02" />
           <Text num="03" />
@@ -26,7 +28,8 @@ const BlackBoxes = () => {
 
         {/* vid */}
         <div
-          className="text-white w-[417.22px] h-[254px] bg-cover bg-center box-center"
+          // className="text-white w-[417.22px] h-[254px] bg-cover bg-center box-center"
+          className="mx-[30px] md:mx-0 text-white h-[254px] bg-cover bg-center box-center"
           style={{ backgroundImage: "url(/img/big-text/banner-vid.jpg)" }}
         >
           <button

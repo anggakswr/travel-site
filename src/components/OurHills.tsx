@@ -13,7 +13,10 @@ const OurHills = () => {
         magna commodo, tempus dolor sit amet, laoreet elit. Donec mauris tortor.
       </p>
 
-      <a href="#learn-our-hills" className="pink-btn py-[18.5px] px-[56px]">
+      <a
+        href="#learn-our-hills"
+        className="pink-btn text-[18px] py-[18.5px] px-[56px]"
+      >
         Learn More
       </a>
     </section>
