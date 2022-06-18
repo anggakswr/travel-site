@@ -34,15 +34,26 @@
 
 .splide__pagination__page {
   background-color: #85a3b2 !important;
-  width: 19px !important;
-  height: 19px !important;
+  width: 16.48px !important;
+  height: 16.48px !important;
   border-radius: 9999px !important;
+}
+
+@media (min-width: 1024px) {
+  .splide__pagination__page {
+    width: 19px !important;
+    height: 19px !important;
+  }
+
+  .splide__pagination__page.is-active {
+    width: 50px !important;
+  }
 }
 
 .splide__pagination__page.is-active {
   transform: scale(1) !important;
   background-color: #dd2242 !important;
-  width: 50px !important;
+  width: 43.37px !important;
 }
 
 .splide__pagination {

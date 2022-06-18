@@ -15,7 +15,7 @@ const ByTheNumbers = () => {
           elit.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-y-[43.88px] md:gap-y-0">
+        <div className="grid md:grid-cols-3 gap-[43.88px] md:gap-y-0">
           <GridItem
             title="100+"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero."

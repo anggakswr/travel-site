@@ -1,6 +1,10 @@
+import useProgressiveImage from "../hooks/useProgressiveImage";
 import SmallItem from "./live-a-life/SmallItem";
 
 const LifeALife = () => {
+  const imgSrc = "/img/live-a-life/becak.png";
+  const isImgLoaded = useProgressiveImage(imgSrc);
+
   return (
     <section
       className="pt-[83px] md:pt-[141.6px] pb-[32px] md:pb-[255px] px-[30px] md:px-0 bg-center bg-cover relative"
@@ -14,18 +18,30 @@ const LifeALife = () => {
           expect.
         </h2>
 
-        {/* big img */}
-        <div
-          className="md:w-[1056px] h-[192px] md:h-[594px] rounded-[10px] box-center bg-center bg-cover mb-[40px] md:mb-[125px]"
-          style={{ backgroundImage: "url(/img/live-a-life/becak.png)" }}
-        >
-          <button
-            className="w-[67px] md:w-[96px] h-[67px] md:h-[96px] rounded-full box-center"
-            style={{ backgroundColor: "#E93A7D" }}
+        {isImgLoaded ? (
+          // vid img
+          <div
+            className="md:w-[1056px] h-[192px] md:h-[594px] rounded-[10px] box-center mb-[40px] md:mb-[125px] bg-center bg-cover"
+            style={{ backgroundImage: `url(${imgSrc})` }}
           >
-            <img src="/icon/white-play.svg" alt="White Play" />
-          </button>
-        </div>
+            <button
+              className="w-[67px] md:w-[96px] h-[67px] md:h-[96px] rounded-full box-center"
+              style={{ backgroundColor: "#E93A7D" }}
+            >
+              <img src="/icon/white-play.svg" alt="White Play" />
+            </button>
+          </div>
+        ) : (
+          // vid img skeleton
+          <div className="md:w-[1056px] h-[192px] md:h-[594px] rounded-[10px] box-center mb-[40px] md:mb-[125px] bg-gray-300">
+            <button
+              className="w-[67px] md:w-[96px] h-[67px] md:h-[96px] rounded-full box-center"
+              style={{ backgroundColor: "#E93A7D" }}
+            >
+              <img src="/icon/white-play.svg" alt="White Play" />
+            </button>
+          </div>
+        )}
       </div>
 
       {/* 2 small items */}

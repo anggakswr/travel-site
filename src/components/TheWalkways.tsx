@@ -1,6 +1,10 @@
+import useProgressiveImage from "../hooks/useProgressiveImage";
 import styles from "./TheWalkways.module.css";
 
 const TheWalkways = () => {
+  const imgSrc = "/img/walkways/mountain-path.png";
+  const isImgLoaded = useProgressiveImage(imgSrc);
+
   return (
     <section
       id="destinations"
@@ -9,14 +13,15 @@ const TheWalkways = () => {
     >
       {/* content */}
       <div className="z-10 flex flex-col md:flex-row items-center mx-[30px] md:mx-0">
-        {/* img */}
-        <div className="md:mr-[130.86px] mb-[33.79px] md:mb-0">
-          <img
-            src="/img/walkways/mountain-path.png"
-            alt="Mountain Path"
-            className="rounded-[10px]"
-          />
-        </div>
+        {isImgLoaded ? (
+          // img
+          <div className="md:mr-[130.86px] mb-[33.79px] md:mb-0">
+            <img src={imgSrc} alt="Mountain Path" className="rounded-[10px]" />
+          </div>
+        ) : (
+          // img skeleton
+          <div className="md:mr-[130.86px] mb-[33.79px] md:mb-0 w-full h-[232px] md:w-[630.34px] md:h-[460px] animate-pulse bg-gray-300 rounded-[10px]" />
+        )}
 
         {/* texts */}
         <div className="text-white md:w-[479.5px]">

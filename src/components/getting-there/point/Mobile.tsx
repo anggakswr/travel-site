@@ -1,4 +1,5 @@
 import { ItemType } from "../Point";
+import Vid from "./mobile/Vid";
 
 type MobilePropType = {
   desc: string;
@@ -16,14 +17,7 @@ const Mobile = ({ desc, items }: MobilePropType) => {
 
       {items?.map((item, index) => (
         <div key={"mobile-item-" + index} className="mt-[32px] mx-[30px]">
-          <div
-            className="w-full h-[208px] min-h-[208px] bg-center bg-cover rounded-[7.34px] box-center cursor-pointer mb-[40px]"
-            style={{
-              backgroundImage: `url(${item.vid})`,
-            }}
-          >
-            <img src="/img/getting-there/play.svg" alt="Play" />
-          </div>
+          <Vid vid={item.vid} />
 
           <p className="text-[16px] text-[#15143966]">
             {item.desc && item.desc.length > 21

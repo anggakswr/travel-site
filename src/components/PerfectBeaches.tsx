@@ -1,6 +1,10 @@
+import useProgressiveImage from "../hooks/useProgressiveImage";
 import styles from "./PerfectBeaches.module.css";
 
 const PerfectBeaches = () => {
+  const imgSrc = "/img/perfect-beaches/beauty-beach.png";
+  const isImgLoaded = useProgressiveImage(imgSrc);
+
   return (
     <section
       className="pt-[56px] md:pt-[95px] pb-[48px] md:pb-[305px] flex justify-center bg-cover bg-center relative"
@@ -27,14 +31,15 @@ const PerfectBeaches = () => {
           </a>
         </div>
 
-        {/* img */}
-        <div>
-          <img
-            src="/img/perfect-beaches/beauty-beach.png"
-            alt="Beauty Beach"
-            className="rounded-[10px]"
-          />
-        </div>
+        {isImgLoaded ? (
+          // img
+          <div>
+            <img src={imgSrc} alt="Beauty Beach" className="rounded-[10px]" />
+          </div>
+        ) : (
+          // img skeleton
+          <div className="w-full h-[232px] md:w-[630.34px] md:h-[460px] animate-pulse bg-gray-300 rounded-[10px]" />
+        )}
       </div>
 
       <div className={`${styles.blueGradient} absolute inset-0`} />

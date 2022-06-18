@@ -1,6 +1,7 @@
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import Arrows from "./slider/Arrows";
+import DesktopSkeleton from "./slider/DesktopSkeleton";
 
 const slides = [1, 2, 3, 1, 2, 3];
 
@@ -20,10 +21,7 @@ const Slider = () => {
         <SplideTrack>
           {slides.map((slide, index) => (
             <SplideSlide key={"slide-" + index}>
-              <img
-                src={`/img/explore-our-secrets/slide-${slide}.png`}
-                alt={"Slide 1" + slide}
-              />
+              <DesktopSkeleton slide={slide} />
             </SplideSlide>
           ))}
         </SplideTrack>

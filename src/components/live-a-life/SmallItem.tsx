@@ -1,3 +1,5 @@
+import useProgressiveImage from "../../hooks/useProgressiveImage";
+
 type SmallItemType = {
   obj: {
     title: string;
@@ -8,16 +10,24 @@ type SmallItemType = {
 
 const SmallItem = ({ obj }: SmallItemType) => {
   const { title, desc, img } = obj;
+  const isImgLoaded = useProgressiveImage(img);
 
   return (
     <div className="box-equal flex-col md:flex-row md:gap-x-[42.37px]">
-      {/* vid */}
-      <button
-        className="w-full md:w-[233px] h-[176px] md:h-[151px] md:min-w-[233px] md:min-h-[151px] rounded-[5px] box-center bg-center bg-cover mb-[40px] md:mb-0"
-        style={{ backgroundImage: `url(${img})` }}
-      >
-        <img src="/icon/small-white-play.svg" alt="Small White Play" />
-      </button>
+      {isImgLoaded ? (
+        // vid img
+        <button
+          className="w-full md:w-[233px] h-[176px] md:h-[151px] md:min-w-[233px] md:min-h-[151px] rounded-[5px] box-center bg-center bg-cover mb-[40px] md:mb-0"
+          style={{ backgroundImage: `url(${img})` }}
+        >
+          <img src="/icon/small-white-play.svg" alt="Small White Play" />
+        </button>
+      ) : (
+        // vid img skeleton
+        <button className="w-full md:w-[233px] h-[176px] md:h-[151px] md:min-w-[233px] md:min-h-[151px] rounded-[5px] box-center mb-[40px] md:mb-0 bg-gray-300">
+          <img src="/icon/small-white-play.svg" alt="Small White Play" />
+        </button>
+      )}
 
       {/* texts */}
       <div className="text-white text-center md:text-left">
