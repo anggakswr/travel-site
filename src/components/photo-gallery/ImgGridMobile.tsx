@@ -12,7 +12,7 @@ const ImgGridMobile = () => {
             className="rounded-[10px] mb-[12px] md:mb-[30px]"
           />
         ) : (
-          <div className="h-[217px] rounded-[10px] animate-pulse bg-gray-300" />
+          <div className="h-[217px] rounded-[10px] mb-[12px] md:mb-[30px] animate-pulse bg-gray-300" />
         )}
 
         {useProgressiveImage("/img/photo-gallery/blue-beach.png") ? (
@@ -22,14 +22,14 @@ const ImgGridMobile = () => {
             className="rounded-[10px] mb-[12px] md:mb-0"
           />
         ) : (
-          <div className="h-[86px] rounded-[10px] animate-pulse bg-gray-300" />
+          <div className="h-[86px] rounded-[10px] mb-[12px] md:mb-0 animate-pulse bg-gray-300" />
         )}
 
         {useProgressiveImage("/img/photo-gallery/farmer.png") ? (
           <img
             src="/img/photo-gallery/farmer.png"
             alt="Farmer"
-            className="rounded-[10px] h-[153px]"
+            className="rounded-[10px]"
           />
         ) : (
           <div className="h-[153px] rounded-[10px] animate-pulse bg-gray-300" />
@@ -45,7 +45,7 @@ const ImgGridMobile = () => {
             className="rounded-[10px] mb-[12px] md:mb-[30px]"
           />
         ) : (
-          <div className="h-[86px] rounded-[10px] animate-pulse bg-gray-300" />
+          <div className="h-[86px] rounded-[10px] mb-[12px] md:mb-[30px] animate-pulse bg-gray-300" />
         )}
 
         {useProgressiveImage("/img/photo-gallery/mountains.png") ? (
@@ -55,7 +55,7 @@ const ImgGridMobile = () => {
             className="rounded-[10px] mb-[12px] md:mb-0"
           />
         ) : (
-          <div className="h-[217px] rounded-[10px] animate-pulse bg-gray-300" />
+          <div className="h-[217px] rounded-[10px] mb-[12px] md:mb-0 animate-pulse bg-gray-300" />
         )}
 
         {useProgressiveImage("/img/photo-gallery/sky-country.png") ? (
