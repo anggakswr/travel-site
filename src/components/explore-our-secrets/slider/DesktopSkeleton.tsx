@@ -1,4 +1,4 @@
-import useProgressiveImage from "../../../hooks/useProgressiveImage";
+// import useProgressiveImage from "../../../hooks/useProgressiveImage";
 
 type DesktopSkeletonPropType = {
   slide: number;
@@ -6,7 +6,8 @@ type DesktopSkeletonPropType = {
 
 const DesktopSkeleton = ({ slide }: DesktopSkeletonPropType) => {
   const imgSrc = `/img/explore-our-secrets/slide-${slide}.png`;
-  const isImgLoaded = useProgressiveImage(imgSrc);
+  // const isImgLoaded = useProgressiveImage(imgSrc);
+  const isImgLoaded = true;
 
   return (
     <>
