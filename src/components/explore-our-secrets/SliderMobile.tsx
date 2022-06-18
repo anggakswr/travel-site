@@ -1,5 +1,6 @@
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import ImgOrSkeleton from "./slider-mobile/ImgOrSkeleton";
 import ArrowsMobile from "./slider/ArrowsMobile";
 
 const slides = [1, 2, 3, 1, 2, 3];
@@ -20,11 +21,7 @@ const SliderMobile = () => {
         <SplideTrack>
           {slides.map((slide, index) => (
             <SplideSlide key={"slide-" + index}>
-              <img
-                src={`/img/explore-our-secrets/slide-${slide}.png`}
-                alt={"Slide 1" + slide}
-                className="w-auto"
-              />
+              <ImgOrSkeleton slide={slide} />
             </SplideSlide>
           ))}
         </SplideTrack>
