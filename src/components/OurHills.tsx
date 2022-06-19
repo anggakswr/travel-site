@@ -15,7 +15,7 @@ const OurHills = () => {
 
       <a
         href="#learn-our-hills"
-        className="relative z-10 pink-btn text-[18px] py-[23px] md:py-[18.5px] px-[56px] w-full md:w-auto"
+        className="relative z-10 pink-btn text-[18px] py-[23px] md:py-[18.5px] md:px-[56px] w-full md:w-auto"
       >
         Learn More
       </a>

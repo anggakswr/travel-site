@@ -44,7 +44,7 @@ const Point = ({ number, title, desc, items, link }: PointPropType) => {
         {link && (
           <a
             href={link}
-            className="mt-[16.95px] pink-btn text-[18px] py-[18.5px] px-[56px]"
+            className="mt-[16.95px] pink-btn text-[18px] py-[18.5px] md:px-[56px]"
           >
             Learn More
           </a>
